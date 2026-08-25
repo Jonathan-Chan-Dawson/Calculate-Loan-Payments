@@ -2,6 +2,20 @@
 
 using namespace std;
 
+
+/*
+	Tips:
+		double x = 10.3
+		int x = 15
+		short x = 400
+
+		y = int (x)
+		y = (int) x
+		double x = 10.3, y = 11.1
+		auto z = x + sta
+
+
+*/
 //pass in space-delimited arguments when you call the executable
 //Example: ./a.out 1 2 3.3
 int main( int argc, char * argv[] )
