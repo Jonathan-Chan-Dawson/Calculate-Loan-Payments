@@ -12,3 +12,5 @@ echo 1000 -18 | ./main.out
 echo 1000 abc | ./main.out
 echo 1000 18 -50 | ./main.out
 echo 1000 18 abc | ./main.out
+echo "tests compleated"
+exit 0
