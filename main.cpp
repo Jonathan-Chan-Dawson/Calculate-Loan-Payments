@@ -44,35 +44,62 @@ int main(int argc, char* argv[])
     if (argc == 1)
     {
         cout << "Loan Amount: ";
-        cin >> input;
+
+        if (!(cin >> input))
+        {
+            cout << "Warning: Invalid loan." << endl;
+            return 1;
+        }
 
         while (!makeNumber(input, loan) || loan <= 0)
         {
             cout << "Warning: Invalid loan." << endl;
             cout << "Loan Amount: ";
-            cin >> input;
+
+            if (!(cin >> input))
+            {
+                return 1;
+            }
         }
 
 
         cout << "Interest Rate (% per year): ";
-        cin >> input;
+
+        if (!(cin >> input))
+        {
+            cout << "Warning: Invalid interest rate." << endl;
+            return 1;
+        }
 
         while (!makeNumber(input, interestRate) || interestRate < 0)
         {
             cout << "Warning: Invalid interest rate." << endl;
             cout << "Interest Rate (% per year): ";
-            cin >> input;
+
+            if (!(cin >> input))
+            {
+                return 1;
+            }
         }
 
 
         cout << "Monthly Payments: ";
-        cin >> input;
+
+        if (!(cin >> input))
+        {
+            cout << "Warning: Invalid payment." << endl;
+            return 1;
+        }
 
         while (!makeNumber(input, monthlyPayment) || monthlyPayment <= 0)
         {
             cout << "Warning: Invalid payment." << endl;
             cout << "Monthly Payments: ";
-            cin >> input;
+
+            if (!(cin >> input))
+            {
+                return 1;
+            }
         }
     }
 
